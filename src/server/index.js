@@ -154,6 +154,15 @@ app.post('/api/authenticate', function(req, res) {
   });
 });
 
+// Server static assets if in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  // For Production
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
 // get a token and send the status code 200 which means it was "OK"
 app.get('/api/checkToken', withAuth, function(req, res) {
   res.sendStatus(200);
