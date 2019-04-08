@@ -29,7 +29,7 @@ mongoose.connect(mongo_uri, { useNewUrlParser: true }, function(err) {
   }
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('dist'));
 
 // retrieve all user (player) objects from my  DB
 app.get('/api/users', (req, res) => {
