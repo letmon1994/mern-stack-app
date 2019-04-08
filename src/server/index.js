@@ -19,6 +19,7 @@ app.use(cookieParser());
 
 // const mongo_uri = 'mongodb://localhost/react_ca2';
 const mongo_uri = 'mongodb+srv://RyanL:RyanL@ca2cluster-gm29r.mongodb.net/react_ca2?retryWrites=true';
+// heroku config:set MONGODB_URL=mongodb+srv:RyanL:RyanL@ca2cluster-gm29r.mongodb.net/react_ca2?retryWrites=true;
 // const mongo_uri = 'mongodb+srv://RyanL:manu98765%40@ca2-gm29r.mongodb.net/test';
 mongoose.connect(mongo_uri, { useNewUrlParser: true }, function(err) {
   if (err) {
