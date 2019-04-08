@@ -4,9 +4,8 @@
   "description": "Demo Full Stack MongoDB, Express, React & Node",
   "main": "src/server/index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.js",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "start": "node src/server/index.js",
+    "client": "npm start --prefix client",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
