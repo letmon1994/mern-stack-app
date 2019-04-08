@@ -5,7 +5,7 @@ If a player card in the list is clicked where the link that says "view players i
 
 If a user is logged in then they can edit or delete players from the database.
 
-To downlaod and use this application:
+# To downlaod and use this application:
 
 # Clone the repository
 git clone https://github.com/letmon1994/mern-stack-app
