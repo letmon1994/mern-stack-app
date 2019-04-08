@@ -1,5 +1,5 @@
 {
-  "name": "mern-full-stack-auth-state",
+  "name": "mern-full-stack-CA2-Ryan-Letmon",
   "version": "1.0.0",
   "description": "Demo Full Stack MongoDB, Express, React & Node",
   "main": "src/server/index.js",
@@ -11,12 +11,13 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "echo Skip build on Heroku"
   },
-  "author": "Andrew Errity",
+  "author": "Ryan Letmon",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.5",
+    "bulma": "^0.7.4",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.5.1",
